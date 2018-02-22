@@ -1,0 +1,15 @@
+{
+  "name": "steampunk-clock",
+  "version": "1.0.0",
+  "description": "Steampunk Clock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clock": "lite-server"
+  },
+  "author": "Marianna Batechko",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

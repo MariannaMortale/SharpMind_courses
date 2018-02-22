@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>JS/Expert Clock Example</title>
+    <script type="text/javascript" src="js/momentjs.js"></script>
+    <script src="js/index.js"></script>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="nixie.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="http://www.jsexpert.net/">JS/Expert</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav hidden-sm hidden-md">
+              <li class="active"><a href="#">Работа с DOM</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://www.jsexpert.net/#head">Главная</a></li>
+              <li><a href="http://www.jsexpert.net/#basic">Как стать программистом</a></li>
+              <li><a href="http://www.jsexpert.net/#js">Понятный JS</a></li>
+              <li><a href="http://www.jsexpert.net/#angular">Продвинутый JS</a></li>
+              <li><a href="http://www.jsexpert.net/articles/">База знаний</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="site-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 today-date" id="DayToday"></div>	
+          </div>
+
+        <div class="row">
+          <div class="col-md-12 today-date"> Текущее время:&nbsp;
+
+            <div class="nixcont">
+              <div class="nixpair">
+                <div class="nixbg">
+                  <div id="nix_h1_0" class="nix">0</div>
+                  <div id="nix_h1_1" class="nix">1</div>
+                  <div id="nix_h1_2" class="nix">2</div>
+                  <div id="nix_h1_3" class="nix">3</div>
+                  <div id="nix_h1_4" class="nix">4</div>
+                  <div id="nix_h1_5" class="nix">5</div>
+                  <div id="nix_h1_6" class="nix">6</div>
+                  <div id="nix_h1_7" class="nix">7</div>
+                  <div id="nix_h1_8" class="nix">8</div>
+                  <div id="nix_h1_9" class="nix">9</div>
+                </div>
+
+                <div class="nixbg">
+                  <div id="nix_h2_0" class="nix">0</div>
+                  <div id="nix_h2_1" class="nix">1</div>
+                  <div id="nix_h2_2" class="nix">2</div>
+                  <div id="nix_h2_3" class="nix">3</div>
+                  <div id="nix_h2_4" class="nix">4</div>
+                  <div id="nix_h2_5" class="nix">5</div>
+                  <div id="nix_h2_6" class="nix">6</div>
+                  <div id="nix_h2_7" class="nix">7</div>
+                  <div id="nix_h2_8" class="nix">8</div>
+                  <div id="nix_h2_9" class="nix">9</div>
+                </div>
+              </div>
+
+              <div class="nixpair">
+                <div class="nixbg">
+                  <div id="nix_m1_0" class="nix">0</div>
+                  <div id="nix_m1_1" class="nix">1</div>
+                  <div id="nix_m1_2" class="nix">2</div>
+                  <div id="nix_m1_3" class="nix">3</div>
+                  <div id="nix_m1_4" class="nix">4</div>
+                  <div id="nix_m1_5" class="nix">5</div>
+                  <div id="nix_m1_6" class="nix">6</div>
+                  <div id="nix_m1_7" class="nix">7</div>
+                  <div id="nix_m1_8" class="nix">8</div>
+                  <div id="nix_m1_9" class="nix">9</div>
+                </div>
+
+                <div class="nixbg">
+                  <div id="nix_m2_0" class="nix">0</div>
+                  <div id="nix_m2_1" class="nix">1</div>
+                  <div id="nix_m2_2" class="nix">2</div>
+                  <div id="nix_m2_3" class="nix">3</div>
+                  <div id="nix_m2_4" class="nix">4</div>
+                  <div id="nix_m2_5" class="nix">5</div>
+                  <div id="nix_m2_6" class="nix">6</div>
+                  <div id="nix_m2_7" class="nix">7</div>
+                  <div id="nix_m2_8" class="nix">8</div>
+                  <div id="nix_m2_9" class="nix">9</div>
+                </div>
+              </div>
+
+              <div class="nixpair">
+                <div class="nixbg">
+                  <div id="nix_s1_0" class="nix">0</div>
+                  <div id="nix_s1_1" class="nix">1</div>
+                  <div id="nix_s1_2" class="nix">2</div>
+                  <div id="nix_s1_3" class="nix">3</div>
+                  <div id="nix_s1_4" class="nix">4</div>
+                  <div id="nix_s1_5" class="nix">5</div>
+                  <div id="nix_s1_6" class="nix">6</div>
+                  <div id="nix_s1_7" class="nix">7</div>
+                  <div id="nix_s1_8" class="nix">8</div>
+                  <div id="nix_s1_9" class="nix">9</div>
+                </div>
+
+                <div class="nixbg">
+                  <div id="nix_s2_0" class="nix">0</div>
+                  <div id="nix_s2_1" class="nix">1</div>
+                  <div id="nix_s2_2" class="nix">2</div>
+                  <div id="nix_s2_3" class="nix">3</div>
+                  <div id="nix_s2_4" class="nix">4</div>
+                  <div id="nix_s2_5" class="nix">5</div>
+                  <div id="nix_s2_6" class="nix">6</div>
+                  <div id="nix_s2_7" class="nix">7</div>
+                  <div id="nix_s2_8" class="nix">8</div>
+                  <div id="nix_s2_9" class="nix">9</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 today-date" id="NewYearDayLeft"></div>	
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
