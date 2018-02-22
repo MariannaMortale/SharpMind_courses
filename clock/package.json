@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clock": "lite-server"
   },
+	"repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariannaMortale/SharpMinds_courses.git"
+},
   "author": "Marianna Batechko",
   "license": "GPL-3.0",
   "dependencies": {

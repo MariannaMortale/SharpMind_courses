@@ -11,11 +11,14 @@ body {
     align-items: center;
   }
 
+  #TimeDiv{
+    line-height: 10vh;
+  }
+
 .nixcont {
     width: fit-content;
     overflow: hidden;
     position: relative;
-    margin-top: 30%;
 }
 
 .nixpair {
@@ -135,9 +138,9 @@ body {
     color: white;
     font-size: 7vh;
     font-family: sans-serif;
-    line-height: 20.4vh;
+    line-height: 17vh;
     display: flex;
     overflow: hidden;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 9vh;
 }
